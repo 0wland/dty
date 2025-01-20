@@ -2,9 +2,9 @@
 
 | R   | 1      | 2      | 3      | 4      | 5      | 6     | SUM |
 | --- | ---    | ---    | ---    | ---    | ---    | ---   | --: |
-| 🟨P | Jan-01 | Feb-04 | Mar-01 | Apr-   | May-   | Jun-  | +11 |
-| 🟧D | Jan-06 | Feb-17 | Mar-23 | Apr-   | May-   | Jun-  | -05 |
-| 🟦M | Jan-16 | Feb-01 | Mar-13 | Apr-   | May-   | Jun-  | -06 |
+| 🟨P | Jan-01 | Feb-01 | Mar-10 | Apr-   | May-   | Jun-  | -07 |
+| 🟧D | Jan-06 | Feb-14 | Mar-22 | Apr-   | May-   | Jun-  | +07 |
+| 🟦M | Jan-16 | Feb-24 | Mar-01 | Apr-   | May-   | Jun-  |  00 |
 
 ---
 
