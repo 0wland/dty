@@ -1,0 +1,43 @@
+calendar:
+  name: DTY
+events:
+- summary: P
+  start_date: '2026-01-01'
+  end_date: '2026-01-11'
+- summary: D
+  start_date: '2026-01-12'
+  end_date: '2026-01-25'
+- summary: P
+  start_date: '2026-01-26'
+  end_date: '2026-02-08'
+- summary: D
+  start_date: '2026-02-09'
+  end_date: '2026-02-15'
+- summary: P
+  start_date: '2026-02-16'
+  end_date: '2026-02-22'
+- summary: D
+  start_date: '2026-02-23'
+  end_date: '2026-03-11'
+- summary: P
+  start_date: '2026-03-12'
+  end_date: '2026-03-19'
+- summary: D
+  start_date: '2026-03-20'
+  end_date: '2026-03-22'
+- summary: M
+  start_date: '2026-03-23'
+  end_date: '2026-04-12'
+- summary: D
+  start_date: '2026-04-13'
+  end_date: '2026-04-19'
+- summary: M
+  start_date: '2026-04-20'
+  end_date: '2026-05-19'
+- summary: P
+  start_date: '2026-05-20'
+  end_date: '2026-05-24'
+- summary: D
+  start_date: '2026-05-25'
+  end_date: '2026-05-31'
+
