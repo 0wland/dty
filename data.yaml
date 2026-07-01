@@ -54,8 +54,11 @@ events:
   end_date: '2026-07-12'
 - summary: M
   start_date: '2026-07-13'
-  end_date: '2026-07-20'
+  end_date: '2026-07-17'
 - summary: P
-  start_date: '2026-07-21'
+  start_date: '2026-07-18'
   end_date: '2026-07-27'
+- summary: M
+  start_date: '2026-07-28'
+  end_date: '2026-08-03'
 
