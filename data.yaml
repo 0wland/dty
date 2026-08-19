@@ -72,4 +72,13 @@ events:
   end_date: '2026-08-26'
 - summary: D
   start_date: '2026-08-27'
-  end_date: '2026-09-02'
+  end_date: '2026-09-06'
+- summary: P
+  start_date: '2026-09-07'
+  end_date: '2026-09-13'
+- summary: M
+  start_date: '2026-09-14'
+  end_date: '2026-09-24'
+- summary: D
+  start_date: '2026-09-25'
+  end_date: '2026-10-01'
