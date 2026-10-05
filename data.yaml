@@ -81,4 +81,10 @@ events:
   end_date: '2026-09-24'
 - summary: D
   start_date: '2026-09-25'
-  end_date: '2026-10-01'
+  end_date: '2026-10-07'
+- summary: P
+  start_date: '2026-10-08'
+  end_date: '2026-10-21'
+- summary: M
+  start_date: '2026-10-22'
+  end_date: '2026-11-01'
