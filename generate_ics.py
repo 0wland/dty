@@ -1,4 +1,4 @@
-from icalendar import Calendar, Event
+from icalendar import Calendar, Event, Alarm
 from datetime import datetime, date, timedelta
 import yaml
 
@@ -31,7 +31,28 @@ for event_data in data['events']:
     reminder.add('TRANSP', 'TRANSPARENT')
     reminder.add('uid', f"dty-reminder-{event_data['summary'].lower()}-{reminder_date.isoformat()}")
 
+    alarm = Alarm()
+    alarm.add('action', 'DISPLAY')
+    alarm.add('description', f"{event_data['summary']} dty - začína zajtra!")
+    alarm.add('trigger', timedelta(0))
+    reminder.add_component(alarm)
+
+    today_reminder = Event()
+    today_reminder.add('dtstart', datetime(start.year, start.month, start.day, 10, 0))
+    today_reminder.add('dtend', datetime(start.year, start.month, start.day, 10, 30))
+    today_reminder.add('summary', f"🔔 REMINDER: {event_data['summary']}")
+    today_reminder.add('description', f"{event_data['summary']} dty - začína DNES!")
+    today_reminder.add('TRANSP', 'TRANSPARENT')
+    today_reminder.add('uid', f"dty-reminder-today-{event_data['summary'].lower()}-{start.isoformat()}")
+
+    today_alarm = Alarm()
+    today_alarm.add('action', 'DISPLAY')
+    today_alarm.add('description', f"{event_data['summary']} dty - začína DNES!")
+    today_alarm.add('trigger', timedelta(0))
+    today_reminder.add_component(today_alarm)
+
     cal.add_component(reminder)
+    cal.add_component(today_reminder)
     cal.add_component(event)
 
 with open('calendar.ics', 'wb') as f:
