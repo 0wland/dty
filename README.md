@@ -1,9 +1,9 @@
 # dty
 
-| R   | '26 | '25  |
-| --- | --- | ---  |
-| 🟦M | +12 | -82  |
-| 🟨P | -13 | +106 |
-| 🟧D | +1  | -24  |
+| R   | '27  | '26  | '25  |
+| --- | ---  | ---  | ---  |
+| 🟦M |      |  -2  | -82  |
+| 🟨P |      |   0  | +106 |
+| 🟧D |      |  +2  | -24  |
 
 Add to your calendar via DTY [URL](https://raw.githubusercontent.com/0wland/dty/refs/heads/master/calendar.ics) or browse DTY [file](/data.yaml)

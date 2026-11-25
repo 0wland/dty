@@ -94,3 +94,18 @@ events:
 - summary: D
   start_date: '2026-11-21'
   end_date: '2026-11-30'
+- summary: P
+  start_date: '2026-12-01'
+  end_date: '2026-12-10'
+- summary: D
+  start_date: '2026-12-11'
+  end_date: '2026-12-20'
+- summary: M
+  start_date: '2026-12-21'
+  end_date: '2026-12-29'
+- summary: P
+  start_date: '2026-12-30'
+  end_date: '2027-01-09'
+- summary: D
+  start_date: '2027-01-10'
+  end_date: '2027-01-16'
