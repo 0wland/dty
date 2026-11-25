@@ -1,5 +1,40 @@
 calendar:
   name: DTY
+codes:
+  # Farba kazdeho kodu: emoji stvorcek pouzity v tabulkach aj v heat mape.
+  M: '🟦'
+  P: '🟨'
+  D: '🟩'
+years:
+- start_date: '2026-01-01'
+  initial: {M: -82, P: 106, D: -24}
+  hours: {workday: 15, holiday: 24}
+  holidays:
+  - '2026-01-01'
+  - '2026-01-06'
+  - '2026-04-03'
+  - '2026-04-06'
+  - '2026-05-01'
+  - '2026-07-05'
+  - '2026-08-29'
+  - '2026-11-01'
+  - '2026-12-24'
+  - '2026-12-25'
+  - '2026-12-26'
+- start_date: '2027-01-01'
+  hours: {workday: 15, holiday: 24}
+  holidays:
+  - '2027-01-01'
+  - '2027-01-06'
+  - '2027-03-26'
+  - '2027-03-29'
+  - '2027-05-01'
+  - '2027-07-05'
+  - '2027-08-29'
+  - '2027-11-01'
+  - '2027-12-24'
+  - '2027-12-25'
+  - '2027-12-26'
 events:
 - summary: P
   start_date: '2026-01-01'
@@ -105,7 +140,10 @@ events:
   end_date: '2026-12-29'
 - summary: P
   start_date: '2026-12-30'
-  end_date: '2027-01-09'
+  end_date: '2027-01-10'
 - summary: D
-  start_date: '2027-01-10'
-  end_date: '2027-01-16'
+  start_date: '2027-01-11'
+  end_date: '2027-01-21'
+- summary: M
+  start_date: '2027-01-22'
+  end_date: '2027-01-31'

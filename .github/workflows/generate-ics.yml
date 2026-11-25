@@ -1,28 +1,46 @@
 name: Generate DTY Calendar
+
 on:
   push:
-    paths: ['data.yaml', 'generate_ics.py']
+    paths: ['data.yaml', 'generate_ics.py', 'generate_stats.py']
+  schedule:
+    # Sundays at 06:00 UTC (07:00 CET / 08:00 CEST). Picks up the year
+    # rollover, when the finished year moves into years/.
+    - cron: '0 6 * * 0'
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Never let two runs auto-commit at the same time.
+concurrency:
+  group: generate-dty
+  cancel-in-progress: false
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Setup Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-    
+
     - name: Install dependencies
       run: pip install icalendar pyyaml
-    
+
+    # Runs first: it validates data.yaml and fails the job on gaps,
+    # overlaps, unknown codes or a missing year config.
+    - name: Generate stats
+      run: python generate_stats.py --write --quiet
+
     - name: Generate ICS
       run: python generate_ics.py
-    
-    - name: Commit ICS
+
+    - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: "chore: update DTY calendar.ics"
-        file_pattern: calendar.ics
+        commit_message: "chore: update DTY calendar.ics and stats"
+        file_pattern: calendar.ics README.md years
